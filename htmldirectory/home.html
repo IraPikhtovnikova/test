@@ -3,6 +3,26 @@
 <head>
     <meta charset="UTF-8" content="text/html">
     <title>Software Engineering project</title>
+</head>
+<body>
+<div class="center">
+  <h1>Translation ru-en</h1>
+  <form action="/translate" method="post">
+    <div class="inputbox">
+      <input type="text" name = 'assignment'>
+      <span>Исходный текст</span>
+    </div>
+    <div class="inputbox">
+      <button type="submit">Перевести</button>
+    </div>
+    <div class="inputbox">
+      <input type="text">{{ result }}</input>
+      <span>Перевод</span>
+    </div>
+  </form>
+</div>
+
+</body>
 <style type="text/css">
   @import url("https://fonts.googleapis.com/css2?family=Lobster:wght@600&display=swap");
 body {
@@ -37,7 +57,7 @@ h1{
 }
 .center .inputbox {
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 50px;
   margin-top: 50px;
 }
@@ -82,31 +102,4 @@ h1{
 }
 
   </style>
-</head>
-<body>
-<!--<div class="input">
-<form action="/translate" method="post">
-  <input type="text" name = 'assignment'>
-  <button type="submit">Отправить</button>
-</div>
-</form>
-<h2>Перевод = {{ result }}</h2>-->
-
-<div class="center">
-  <h1>Translation ru-en</h1>
-  <form action="/translate" method="post">
-    <div class="inputbox">
-      <input type="text" name = 'assignment'>
-      <span>Исходный текст</span>
-    </div>
-    <div class="inputbox">
-      <button type="submit">Перевести</button>
-    </div>
-    <div class="inputbox">
-      {{ result }}
-    </div>
-  </form>
-</div>
-
-</body>
 </html>
