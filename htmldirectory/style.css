@@ -8,7 +8,6 @@ body {
   align-items: center;
   height: 100vh;
   background: linear-gradient(45deg, greenyellow, dodgerblue);
-  font-family: "Sansita Swashed", cursive;
 }
 .center {
   position: relative;
