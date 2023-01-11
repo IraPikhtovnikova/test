@@ -26,4 +26,4 @@ def translate(request: Request):
 
 @app.post("/translate",response_class=HTMLResponse)
 async def handle_form(request: Request, assignment: str = Form(...)):
-    return templates.TemplateResponse('home.html',{'request': request, 'result': translator(assignment)[0]['translation_test']})
+    return templates.TemplateResponse('home.html',{'request': request, 'result': translator(assignment)[0]})
